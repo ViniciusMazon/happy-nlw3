@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+}
+
+body,
+input,
+button,
+textarea {
+  font: 600 18px 'Nunito', sans-serif;
+}
+
+:root {
+  font-size: 60%;
+
+  --text: #fff;
+  --background: #ebf2f5;
+  --gradient: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  --color-yellow: #ffd666;
+  --color-soft-blue: #96FEFF;
+  --color-blue: #15C3D6;
+  --color-brown: #8D734B;
+
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
