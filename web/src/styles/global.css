@@ -23,10 +23,10 @@ textarea {
   --background: #ebf2f5;
   --gradient: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
   --color-yellow: #ffd666;
-  --color-soft-blue: #96FEFF;
-  --color-blue: #15C3D6;
-  --color-brown: #8D734B;
-
+  --color-soft-blue: #96feff;
+  --color-medium-blue: #17d6eb;
+  --color-blue: #15c3d6;
+  --color-brown: #8d734b;
 }
 
 @media (min-width: 700px) {
