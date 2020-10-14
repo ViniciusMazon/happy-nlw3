@@ -145,6 +145,15 @@
   color: #37c77f;
 }
 
+.orphanage-details
+  .orphanage-details-content
+  .open-details
+  div.open-on-weekends.dont-open {
+  background: var(--gradient-pink);
+  border: 1px solid var(--color-soft-pink);
+  color: var(--color-pink);
+}
+
 .orphanage-details .orphanage-details-content button.contact-button {
   margin-top: 64px;
 

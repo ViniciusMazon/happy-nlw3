@@ -21,8 +21,9 @@ textarea {
 
   --text: #fff;
   --background: #ebf2f5;
-  --background-popup: rgba(255,255,255,0.8);
+  --background-popup: rgba(255, 255, 255, 0.8);
   --gradient: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  --gradient-pink: linear-gradient(154.16deg, #fcf0f4 7.85%, #ffffff 91.03%);
   --box-shadow: rgba(23, 142, 166, 0.16);
   --color-yellow: #ffd666;
   --color-soft-blue: #96feff;
@@ -30,6 +31,8 @@ textarea {
   --color-blue: #15c3d6;
   --color-dark-blue: #0089a5;
   --color-brown: #8d734b;
+  --color-pink: #ff669d;
+  --color-soft-pink: #ffbcd4;
 }
 
 @media (min-width: 700px) {
