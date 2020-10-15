@@ -154,7 +154,7 @@
   color: var(--color-pink);
 }
 
-.orphanage-details .orphanage-details-content button.contact-button {
+.orphanage-details .orphanage-details-content a.contact-button {
   margin-top: 6.4rem;
 
   width: 100%;
@@ -165,6 +165,7 @@
   border-radius: 2rem;
   color: var(--text);
   font-weight: 800;
+  text-decoration: none;
 
   display: flex;
   justify-content: center;
@@ -174,10 +175,10 @@
   outline-color: var(--button-green);
 }
 
-.orphanage-details .orphanage-details-content button.contact-button svg {
+.orphanage-details .orphanage-details-content a.contact-button svg {
   margin-right: 1.6rem;
 }
 
-.orphanage-details .orphanage-details-content button.contact-button:hover {
+.orphanage-details .orphanage-details-content a.contact-button:hover {
   background: var(--button-green-hover);
 }
