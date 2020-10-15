@@ -10,8 +10,8 @@ form.create-orphanage-form {
   width: 700px;
   margin: 64px auto;
 
-  background: #ffffff;
-  border: 1px solid #d3e2e5;
+  background: var(--text);
+  border: 1px solid var(--border);
   border-radius: 20px;
 
   padding: 64px 80px;
@@ -21,7 +21,7 @@ form.create-orphanage-form {
 
 form.create-orphanage-form .leaflet-container {
   margin-bottom: 4rem;
-  border: 1px solid #d3e2e5;
+  border: 1px solid var(--color-gray);
   border-radius: 20px;
 }
 
@@ -38,10 +38,10 @@ form.create-orphanage-form fieldset legend {
 
   font-size: 32px;
   line-height: 34px;
-  color: #5c8599;
+  color: var(--legend);
   font-weight: 700;
 
-  border-bottom: 1px solid #d3e2e5;
+  border-bottom: 1px solid var(--border);
   margin-bottom: 40px;
   padding-bottom: 24px;
 }
@@ -52,14 +52,14 @@ form.create-orphanage-form .input-block + .input-block {
 
 form.create-orphanage-form .input-block label {
   display: flex;
-  color: #8fa7b3;
+  color: var(--input-legend);
   margin-bottom: 8px;
   line-height: 24px;
 }
 
 form.create-orphanage-form .input-block label span {
   font-size: 14px;
-  color: #8fa7b3;
+  color: var(--input-legend);
   margin-left: 24px;
   line-height: 24px;
 }
@@ -67,11 +67,11 @@ form.create-orphanage-form .input-block label span {
 form.create-orphanage-form .input-block input,
 form.create-orphanage-form .input-block textarea {
   width: 100%;
-  background: #f5f8fa;
-  border: 1px solid #d3e2e5;
+  background: var(--input-background);
+  border: 1px solid var(--border);
   border-radius: 20px;
   outline: none;
-  color: #5c8599;
+  color: var(--legend);
 }
 
 form.create-orphanage-form .input-block input {
@@ -83,8 +83,15 @@ form.create-orphanage-form .input-block textarea {
   min-height: 120px;
   max-height: 240px;
   resize: vertical;
-  padding: 16px;
-  line-height: 28px;
+  padding: 1.6rem;
+  line-height: 2.8rem;
+}
+
+form.create-orphanage-form .input-block input:focus {
+  border-color: var(--color-medium-blue);
+}
+form.create-orphanage-form .input-block textarea:focus {
+  border-color: var(--color-medium-blue);
 }
 
 form.create-orphanage-form .input-block .images-container {
@@ -94,10 +101,10 @@ form.create-orphanage-form .input-block .images-container {
 }
 
 form.create-orphanage-form .input-block .images-container .new-image {
-  height: 96px;
-  background: #f5f8fa;
-  border: 1px dashed #96d2f0;
-  border-radius: 20px;
+  height: 9.6rem;
+  background: var(--input-background);
+  border: 0.1rem dashed var(--image-border);
+  border-radius: 2rem;
   cursor: pointer;
 
   display: flex;
@@ -107,9 +114,9 @@ form.create-orphanage-form .input-block .images-container .new-image {
 
 form.create-orphanage-form .input-block .images-container img {
   width: 100%;
-  height: 96px;
+  height: 9.6rem;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 form.create-orphanage-form .input-block input[type='file'] {
@@ -122,38 +129,39 @@ form.create-orphanage-form .input-block .button-select {
 }
 
 form.create-orphanage-form .input-block .button-select button {
-  height: 64px;
-  background: #f5f8fa;
-  border: 1px solid #d3e2e5;
-  color: #5c8599;
+  height: 6.4rem;
+  background: var(--input-background);
+  border: 0.1rem solid var(--border);
+  color: var(--legend);
   cursor: pointer;
+  outline-color: var(--color-medium-blue);
 }
 
 form.create-orphanage-form .input-block .button-select button.active {
-  background: #edfff6;
-  border: 1px solid #a1e9c5;
-  color: #37c77f;
+  background: var(--color-light-green);
+  border: 0.1rem solid var(--color-soft-green);
+  color: var(--color-green);
 }
 
 form.create-orphanage-form .input-block .button-select button:first-child {
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 2rem 0px 0px 2rem;
 }
 
 form.create-orphanage-form .input-block .button-select button:last-child {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 2rem 2rem 0;
   border-left: 0;
 }
 
 form.create-orphanage-form button.confirm-button {
-  margin-top: 64px;
+  margin-top: 6.4rem;
 
   width: 100%;
-  height: 64px;
+  height: 6.4rem;
   border: 0;
   cursor: pointer;
-  background: #3cdc8c;
-  border-radius: 20px;
-  color: #ffffff;
+  background: var(--button-green);
+  border-radius: 2rem;
+  color: var(--text);
   font-weight: 800;
 
   display: flex;
@@ -161,12 +169,13 @@ form.create-orphanage-form button.confirm-button {
   align-items: center;
 
   transition: background-color 0.2s;
+  outline-color: var(--button-green);
 }
 
 form.create-orphanage-form button.confirm-button svg {
-  margin-right: 16px;
+  margin-right: 1.6rem;
 }
 
 form.create-orphanage-form button.confirm-button:hover {
-  background: #36cf82;
+  background: var(--button-green-hover);
 }
