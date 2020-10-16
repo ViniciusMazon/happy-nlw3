@@ -52,6 +52,10 @@ export default function OrphanageDetails() {
     );
   }
 
+  function handleOpenWhatsapp() {
+    Linking.openURL(`whatsapp://send?phone=+55${'1199999999'}`);
+  }
+
   if (!orphanage) {
     return (
       <View style={styles.container}>
@@ -143,7 +147,7 @@ export default function OrphanageDetails() {
           )}
         </View>
 
-        <RectButton style={styles.contactButton} onPress={() => {}}>
+        <RectButton style={styles.contactButton} onPress={handleOpenWhatsapp}>
           <FontAwesome name="whatsapp" size={24} color="#FFF" />
           <Text style={styles.contactButtonText}>Entrar em contato</Text>
         </RectButton>
