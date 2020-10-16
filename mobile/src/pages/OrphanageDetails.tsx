@@ -27,6 +27,7 @@ interface Orphanage {
   longitude: number;
   about: string;
   instructions: string;
+  whatsapp: string;
   opening_hours: string;
   open_on_weekends: boolean;
   images: Array<{
@@ -53,7 +54,7 @@ export default function OrphanageDetails() {
   }
 
   function handleOpenWhatsapp() {
-    Linking.openURL(`whatsapp://send?phone=+55${'1199999999'}`);
+    Linking.openURL(`whatsapp://send?phone=+55${orphanage?.whatsapp}`);
   }
 
   if (!orphanage) {
