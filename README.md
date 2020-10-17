@@ -29,13 +29,9 @@ O Happy conecta os moradores de sua cidade com as casas de acolhimento instituci
 
 Criado durante a NLW#3, créditos a [Rocketseat](https://github.com/Rocketseat) 💜.
 
-
-
 **Vídeo demo**
 
 [![Happy](docs/player.png)](https://www.youtube.com/watch?v=mIZyBNr6heA "Happy")
-
-
 
 ## 🛸 Tecnologias
 
