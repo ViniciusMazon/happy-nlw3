@@ -1,8 +1,6 @@
-
 <h1 align="center">
     <img alt="Happy" title="Happy" src="docs/logo.svg" />
 </h1>
-
 <p align="center">
   <a href="#-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -10,22 +8,30 @@
   <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
 </p>
-
 <p align="center">
 	<img alt="GitHub" src="https://img.shields.io/github/license/viniciusmazon/happy-nlw3">
 </p>
 <p align="center">
-  <img alt="Happy" src="docs/mobile.png" width="50%">
+  <img alt="Happy" src="docs/mobile.png" width="65%">
 </p>
+
+
+
 
 
 
 
 ## 💡 Sobre o projeto
 
-O Happy conecta os moradores de sua cidade com as casas de acolhimento institucional. 👧🏻👦🏾
+O Happy conecta os moradores de sua cidade com as casas de acolhimento institucional. O nome Happy é um trocadilho com a palavra Happy (felicidade, em inglês) e App (de aplicativo).
 
-O nome Happy é um trocadilho com a palavra Happy (felicidade, em inglês) e App (de aplicativo).
+
+
+Criado durante a NLW#3, créditos a [Rocketseat](https://github.com/Rocketseat) 💜.
+
+**Vídeo demo**
+
+[![Happy](docs/player.png)](https://www.youtube.com/watch?v=mIZyBNr6heA "Happy")
 
 ## 🛸 Tecnologias
 
@@ -90,5 +96,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 
 
 
-Feito com 💜 por Vinicius Mazon durante o evento Next Level Week#3
+Feito com 🖤 por Vinicius Mazon durante o evento Next Level Week#3.
 
