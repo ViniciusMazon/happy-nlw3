@@ -27,13 +27,6 @@ O Happy conecta os moradores de sua cidade com as casas de acolhimento instituci
 
 O nome Happy é um trocadilho com a palavra Happy (felicidade, em inglês) e App (de aplicativo).
 
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tQ3ewE_lqsw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
 ## 🛸 Tecnologias
 
 * [Typescript](https://www.typescriptlang.org)
