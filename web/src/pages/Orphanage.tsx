@@ -5,6 +5,7 @@ import { Map, Marker, TileLayer } from 'react-leaflet';
 import { useParams } from 'react-router-dom';
 
 import '../styles/pages/orphanage.css';
+import LoadingOrphanage from '../components/Shimmer/LoadingOrphanage';
 import Sidebar from '../components/Sidebar';
 import mapIcon from '../utils/mapIcon';
 import api from '../services/api';
@@ -35,12 +36,14 @@ export default function Orphanage() {
 
   useEffect(() => {
     api.get(`/orphanages/${params.id}`).then((response) => {
-      setOrphanage(response.data);
+      setTimeout(() => {
+        setOrphanage(response.data);
+      }, 2000);
     });
   }, [params.id]);
 
   if (!orphanage) {
-    return <p>Carregando...</p>;
+    return <LoadingOrphanage />;
   }
 
   return (
