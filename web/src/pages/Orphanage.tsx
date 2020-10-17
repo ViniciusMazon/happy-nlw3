@@ -15,6 +15,7 @@ interface Orphanage {
   name: string;
   about: string;
   instructions: string;
+  whatsapp: string;
   opening_hours: string;
   open_on_weekends: string;
   images: Array<{
@@ -133,7 +134,7 @@ export default function Orphanage() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href={`https://wa.me/55${'1199999999'}`}
+              href={`https://wa.me/55${orphanage.whatsapp}`}
               className="contact-button"
             >
               <FaWhatsapp size={20} color="#FFF" />

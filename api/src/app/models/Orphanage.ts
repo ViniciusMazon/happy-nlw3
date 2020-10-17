@@ -28,6 +28,9 @@ export default class Orphanage {
   instructions: string;
 
   @Column()
+  whatsapp: string;
+
+  @Column()
   opening_hours: string;
 
   @Column()
