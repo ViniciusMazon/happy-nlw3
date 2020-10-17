@@ -1,0 +1,69 @@
+.orphanage-details .banner-skeleton {
+  width: 100%;
+  height: 30rem;
+}
+
+.orphanage-details .images-skeleton {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1.6rem;
+
+  margin: 1.6rem 4rem 0;
+}
+
+.orphanage-details .image-skeleton {
+  height: 8.8rem;
+  border-radius: 2rem;
+}
+
+.orphanage-title-skeleton {
+  width: 36.8rem;
+  height: 5.4rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.6rem;
+}
+
+.orphanage-description-skeleton {
+  margin-top: 2.4rem;
+  width: 54.8rem;
+  height: 5.6rem;
+  border-radius: 0.6rem;
+}
+
+.orphanage-details .orphanage-details-content .map-container-skeleton {
+  margin-top: 6.4rem;
+  border-radius: 2rem;
+  width: 54.8rem;
+  height: 29.1rem;
+}
+
+.orphanage-details
+  .orphanage-details-content
+  .map-container-skeleton
+  footer
+  .map-footer-skeleton {
+  padding: 2rem 0;
+  width: 100%;
+  height: 6.4rem;
+}
+
+.orphanage-details
+  .orphanage-details-content
+  .map-container-skeleton
+  .map-skeleton {
+  border-radius: 2rem;
+  width: 54.8rem;
+  height: 22.7rem;
+}
+
+.orphanage-details .orphanage-details-content .open-details .hour-skeleton {
+  width: 26.4rem;
+  height: 17.6rem;
+}
+
+.orphanage-details .orphanage-details-content .whatsapp-button-skeleton {
+  margin-top: 6.4rem;
+  width: 100%;
+  height: 6.4rem;
+  border-radius: 2rem;
+}
