@@ -41,9 +41,11 @@ textarea {
     #ffffff 91.03%
   );
   --box-shadow: rgba(23, 142, 166, 0.16);
+
   --color-gray: #d3e2e5;
   --color-yellow: #ffd666;
   --color-soft-blue: #96feff;
+  --color-light-blue: #12d4e0;
   --color-medium-blue: #17d6eb;
   --color-blue: #15c3d6;
   --color-dark-blue: #0089a5;
@@ -52,6 +54,7 @@ textarea {
   --color-soft-pink: #ffbcd4;
   --color-light-green: #edfff6;
   --color-soft-green: #a1e9c5;
+  --color-medium-green: #31b272;
   --color-green: #37c77f;
   --button-green: #3cdc8c;
   --button-green-hover: #36cf82;
