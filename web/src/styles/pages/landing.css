@@ -43,8 +43,8 @@
 
 .content-wrapper .location {
   position: absolute;
+  left: 32rem;
   top: 0;
-  right: 0;
 
   font-size: 2.4rem;
   line-height: 3.4rem;
@@ -77,4 +77,29 @@
 
 .content-wrapper .enter-app:hover {
   background: var(--color-soft-blue);
+}
+
+.content-wrapper .enter-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 22rem;
+  height: 5.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--color-light-blue);
+  border-radius: 2rem;
+
+  font: 800 2rem 'Nunito';
+  color: var(--text);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.content-wrapper .enter-login:hover {
+  background-color: var(--color-soft-blue);
 }

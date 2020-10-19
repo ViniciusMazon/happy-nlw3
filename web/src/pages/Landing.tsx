@@ -11,15 +11,19 @@ export default function Landing() {
       <div className="content-wrapper">
         <img src={logoimg} alt="Logo Happy" />
 
+        <div className="location">
+          <strong>Barreiras</strong>
+          <span>Bahia</span>
+        </div>
+
         <main>
           <h1>Leve felicidade para o mundo</h1>
           <p>Visite orfanatos e mude o dia de muitas crianças.</p>
         </main>
 
-        <div className="location">
-          <strong>Barreiras</strong>
-          <span>Bahia</span>
-        </div>
+        <Link to="/login" className="enter-login">
+          Acesso restrito
+        </Link>
 
         <Link to="/mapa-de-orfanatos" className="enter-app">
           <FiArrowRight size={32} color="#8D734B" />
