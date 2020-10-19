@@ -57,6 +57,12 @@ Instale as dependência em cada diretório (API, Web e Mobile) rodando o comando
 yarn
 ```
 
+No diretório da Api, execute o comando abaixo para rodar as migrations e criar as tabelas no banco de dados:
+
+```bash
+yarn typeorm migration:run
+```
+
 No diretório Mobile/services, edite o arquivo api.ts e adicione o IP da sua máquina seguindo o exemplo abaixo:
 
 ```javascript
