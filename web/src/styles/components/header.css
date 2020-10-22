@@ -1,0 +1,19 @@
+#app-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 0.1rem solid #d3e2e5;
+  padding-bottom: 2.4rem;
+}
+
+#app-header h1 {
+  font: 700 3.2rem 'Nunito';
+  color: var(--title) !important;
+}
+
+#app-header span {
+  font: 600 1.6rem 'Nunito';
+  color: #8fa7b3;
+}

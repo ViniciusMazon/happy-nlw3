@@ -1,0 +1,52 @@
+#app-orphanage-card {
+  width: 54.4rem;
+  margin-top: 4rem;
+  border: 1px solid var(--map-border);
+  border-radius: 2rem;
+}
+
+#app-orphanage-card .leaflet-container {
+  height: 22.7rem;
+  border-radius: 2rem;
+}
+
+#app-orphanage-card .footer {
+  background-color: var(--text);
+  height: 8rem;
+  border-radius: 0 0 2rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2.4rem 3.2rem;
+}
+
+#app-orphanage-card .footer strong {
+  font: bold 2.4rem 'Nunito';
+  color: var(--title);
+}
+
+#app-orphanage-card .footer .button-block {
+  display: flex;
+}
+
+#app-orphanage-card .footer .button-block button {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 1.6rem;
+  background: var(--background);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  outline: 0;
+}
+
+#app-orphanage-card .footer .button-block button:nth-child(1) {
+  margin-right: .8rem;
+}
+
