@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiEdit3, FiTrash } from 'react-icons/fi';
+import { FiEdit3, FiTrash, FiArrowRight } from 'react-icons/fi';
 import { Map, Marker, TileLayer } from 'react-leaflet';
 
 import '../styles/components/orphanageCard.css';
@@ -23,9 +23,15 @@ interface Props {
   };
 
   center: [number, number];
+
+  isPending?: boolean;
 }
 
-export default function OrphanageCard({ orphanage, center }: Props) {
+export default function OrphanageCard({
+  orphanage,
+  center,
+  isPending = false,
+}: Props) {
   return (
     <div id="app-orphanage-card">
       <Map
@@ -52,12 +58,20 @@ export default function OrphanageCard({ orphanage, center }: Props) {
         <strong>{orphanage.name}</strong>
 
         <span className="button-block">
-          <button>
-            <FiEdit3 size={24} color={'#15C3D6'} />
-          </button>
-          <button>
-            <FiTrash size={24} color={'#15C3D6'} />
-          </button>
+          {isPending ? (
+            <button>
+              <FiArrowRight size={24} color={'#15C3D6'} />
+            </button>
+          ) : (
+            <>
+              <button>
+                <FiEdit3 size={24} color={'#15C3D6'} />
+              </button>
+              <button>
+                <FiTrash size={24} color={'#15C3D6'} />
+              </button>
+            </>
+          )}
         </span>
       </div>
     </div>

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import api from '../services/api';
 
-import '../styles/pages/dashboard.css';
-import notFoundImage from '../images/ops.svg';
-
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import OrphanageCard from '../components/OrphanageCard';
+
+import '../styles/pages/dashboard.css';
+import notFoundImage from '../images/ops.svg';
 
 interface Orphanage {
   id: number;
@@ -24,19 +24,19 @@ interface Orphanage {
   }[];
 }
 
-export default function RegisteredOrphanages() {
+export default function PendingRegistrations() {
   const [orphanages, setOrphanages] = useState([]);
   const [initialPosition, setInitialPosition] = useState<[number, number]>([
     0,
     0,
   ]);
 
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition((position) => {
-      const { latitude, longitude } = position.coords;
-      setInitialPosition([latitude, longitude]);
-    });
-  }, []);
+  // useEffect(() => {
+  //   navigator.geolocation.getCurrentPosition((position) => {
+  //     const { latitude, longitude } = position.coords;
+  //     setInitialPosition([latitude, longitude]);
+  //   });
+  // }, []);
 
   useEffect(() => {
     api.get('/orphanages').then((response) => {
@@ -46,10 +46,10 @@ export default function RegisteredOrphanages() {
 
   return (
     <div id="page-dashboard">
-      <Sidebar dashboard={true} />
+      <Sidebar dashboard={true} active="pending" />
 
       <main>
-        <Header title={'Orfanatos Cadastrados'} count={orphanages.length} />
+        <Header title={'Cadastros pendentes'} count={orphanages.length} />
 
         {orphanages.length > 0 ? (
           <div className="orphanage-cards">
@@ -59,6 +59,7 @@ export default function RegisteredOrphanages() {
                   key={orphanage.id}
                   orphanage={orphanage}
                   center={initialPosition}
+                  isPending={true}
                 />
               );
             })}

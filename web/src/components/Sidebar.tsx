@@ -6,7 +6,7 @@ import mapMarkerImg from '../images/local.svg';
 
 import '../styles/components/sidebar.css';
 
-export default function Sidebar({ dashboard = false }) {
+export default function Sidebar({ dashboard = false, active = 'registered' }) {
   const { goBack } = useHistory();
 
   return (
@@ -15,10 +15,16 @@ export default function Sidebar({ dashboard = false }) {
 
       {dashboard && (
         <nav>
-          <Link to="" className="active">
+          <Link
+            to="/dashboard/orfanatos-cadastrados"
+            className={active === 'registered' ? 'active' : ''}
+          >
             <FiMapPin size={24} color="#FFF" />
           </Link>
-          <Link to="">
+          <Link
+            to="/dashboard/registros-pendentes"
+            className={active === 'pending' ? 'active' : ''}
+          >
             <FiAlertCircle size={24} color="#FFF" />
           </Link>
         </nav>

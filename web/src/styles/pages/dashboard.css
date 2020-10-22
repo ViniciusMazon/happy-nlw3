@@ -17,11 +17,22 @@
   color: black;
 }
 
-#page-dashboard  main .orphanage-cards {
+#page-dashboard main .orphanage-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
+#page-dashboard main .not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
 
+#page-dashboard main .not-found h1 {
+  font: 600 2.4rem 'Nunito';
+  color: var(--input-legend);
+  margin-top: 1.6rem;
+}
