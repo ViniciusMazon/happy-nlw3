@@ -51,6 +51,7 @@ textarea {
   --color-dark-blue: #0089a5;
   --color-brown: #8d734b;
   --color-pink: #ff669d;
+  --color-medium-pink: #d6487b;
   --color-soft-pink: #ffbcd4;
   --color-light-green: #edfff6;
   --color-soft-green: #a1e9c5;
@@ -58,6 +59,7 @@ textarea {
   --color-green: #37c77f;
   --button-green: #3cdc8c;
   --button-green-hover: #36cf82;
+  --button-pink-hover: #F95590;
 }
 
 @media (min-width: 700px) {

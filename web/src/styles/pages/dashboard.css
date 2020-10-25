@@ -1,0 +1,36 @@
+#page-dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#page-dashboard main {
+  max-width: 1120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 6.4rem auto;
+}
+
+#page-dashboard main h1 {
+  color: black;
+}
+
+#page-dashboard main .orphanage-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#page-dashboard main .not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+
+#page-dashboard main .not-found h1 {
+  font: 600 2.4rem 'Nunito';
+  color: var(--input-legend);
+  margin-top: 1.6rem;
+}

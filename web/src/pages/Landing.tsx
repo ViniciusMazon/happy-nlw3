@@ -21,7 +21,7 @@ export default function Landing() {
           <p>Visite orfanatos e mude o dia de muitas crianças.</p>
         </main>
 
-        <Link to="/login" className="enter-login">
+        <Link to="/dashboard/orfanatos-cadastrados" className="enter-login">
           Acesso restrito
         </Link>
 
