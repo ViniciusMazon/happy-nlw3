@@ -8,6 +8,7 @@ import CreateOrphanage from './pages/CreateOrphanage';
 import CreateOrphanageSuccess from './pages/CreateOrphanageSuccess';
 import RegisteredOrphanages from './pages/RegisteredOrphanages';
 import PendingRegistrations from './pages/PendingRegistrations';
+import DeleteOrphanageSuccess from './pages/DeleteOrphanageSuccess';
 
 export default function Routes() {
   return (
@@ -22,8 +23,13 @@ export default function Routes() {
           component={CreateOrphanageSuccess}
         />
         <Route
+          exact
           path="/dashboard/orfanatos-cadastrados"
           component={RegisteredOrphanages}
+        />
+        <Route
+          path="/dashboard/orfanatos-cadastrados/excluir"
+          component={DeleteOrphanageSuccess}
         />
         <Route
           path="/dashboard/registros-pendentes"

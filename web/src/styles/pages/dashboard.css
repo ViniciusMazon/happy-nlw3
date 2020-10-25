@@ -9,7 +9,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 6.4rem auto;
 }
 
@@ -20,7 +19,6 @@
 #page-dashboard main .orphanage-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 #page-dashboard main .not-found {

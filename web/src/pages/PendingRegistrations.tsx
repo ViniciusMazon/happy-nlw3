@@ -18,6 +18,7 @@ interface Orphanage {
   whatsapp: string;
   opening_hours: string;
   open_on_weekends: boolean;
+  status: string;
   images: {
     id: number;
     url: string;
@@ -31,16 +32,23 @@ export default function PendingRegistrations() {
     0,
   ]);
 
-  // useEffect(() => {
-  //   navigator.geolocation.getCurrentPosition((position) => {
-  //     const { latitude, longitude } = position.coords;
-  //     setInitialPosition([latitude, longitude]);
-  //   });
-  // }, []);
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const { latitude, longitude } = position.coords;
+      setInitialPosition([latitude, longitude]);
+    });
+  }, []);
 
   useEffect(() => {
     api.get('/orphanages').then((response) => {
-      setOrphanages(response.data);
+      const registeredOrphanages = response.data.filter(
+        (orphanage: Orphanage) => {
+          if (orphanage.status === 'new') {
+            return orphanage;
+          }
+        }
+      );
+      setOrphanages(registeredOrphanages);
     });
   }, []);
 

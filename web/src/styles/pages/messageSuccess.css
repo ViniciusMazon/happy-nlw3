@@ -1,34 +1,40 @@
-#page-create-orphanage-success {
+.page-message-success {
   width: 100vw;
   height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.delete {
+  background-color: var(--color-pink);
+}
+
+.confirmation {
   background-color: var(--color-green);
 }
 
-#page-create-orphanage-success main {
+.page-message-success main {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#page-create-orphanage-success main div {
+.page-message-success main div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#page-create-orphanage-success main div h1 {
+.page-message-success main div h1 {
   font: 800 8rem 'Nunito';
   color: var(--text);
 
   margin-bottom: 3.2rem;
 }
 
-#page-create-orphanage-success main div h2 {
+.page-message-success main div h2 {
   max-width: 39.2rem;
 
   font: normal 2.4rem 'Nunito';
@@ -36,10 +42,10 @@
   line-height: 3.4rem;
   text-align: center;
 
-  margin-bottom: 6rem;;
+  margin-bottom: 6rem;
 }
 
-#page-create-orphanage-success main div a {
+.page-message-success main div a {
   width: 24.3rem;
   height: 6.4rem;
 
@@ -47,20 +53,31 @@
   align-items: center;
   justify-content: center;
 
-  background-color: var(--color-medium-green);
   border-radius: 2rem;
 
   font: 800 1.8rem 'Nunito';
   color: var(--text);
   text-decoration: none;
   outline: 0;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 }
 
-#page-create-orphanage-success main div a:hover {
+.page-message-success a.confirmation-button {
+  background-color: var(--color-medium-green);
+}
+
+.page-message-success a.confirmation-button:hover {
   background-color: var(--button-green-hover);
 }
 
-#page-create-orphanage-success main img {
+.page-message-success a.delete-button {
+  background-color: var(--color-medium-pink);
+}
+
+.page-message-success a.delete-button:hover {
+  background-color: var(--button-pink-hover);
+}
+
+.page-message-success main img {
   margin-left: 12.2rem;
 }
