@@ -1,7 +1,8 @@
 import React from 'react';
 import { FiEdit3, FiTrash, FiArrowRight } from 'react-icons/fi';
 import { Map, Marker, TileLayer } from 'react-leaflet';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
+import api from '../services/api';
 
 import '../styles/components/orphanageCard.css';
 import mapIcon from '../utils/mapIcon';
@@ -35,8 +36,13 @@ export default function OrphanageCard({
 }: Props) {
   const history = useHistory();
 
+  function handleEdit() {
+    console.log('teste');
+    history.push(`/dashboard/editar-orfanato/${orphanage.id}`);
+  }
+
   function handleDelete() {
-    alert('Tem certeza?');
+    api.delete(`/orphanages/${orphanage.id}`);
     history.push('/dashboard/orfanatos-cadastrados/excluir');
   }
 
@@ -67,12 +73,12 @@ export default function OrphanageCard({
 
         <span className="button-block">
           {isPending ? (
-            <button>
+            <button onClick={handleEdit}>
               <FiArrowRight size={24} color={'#15C3D6'} />
             </button>
           ) : (
             <>
-              <button>
+              <button onClick={handleEdit}>
                 <FiEdit3 size={24} color={'#15C3D6'} />
               </button>
               <button onClick={handleDelete}>
