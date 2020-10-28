@@ -82,6 +82,7 @@ export default {
       instructions,
       opening_hours,
       open_on_weekends,
+      status,
     } = request.body;
 
     const orphanagesRepository = getRepository(Orphanage);
@@ -101,7 +102,7 @@ export default {
       whatsapp,
       opening_hours,
       open_on_weekends: open_on_weekends === 'true',
-      status: 'new',
+      status,
     };
 
     const schema = Yup.object().shape({

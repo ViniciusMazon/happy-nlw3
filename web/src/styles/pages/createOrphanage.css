@@ -3,7 +3,7 @@
 }
 
 #page-create-orphanage main {
-  width: 700px;
+  width: 100%;
 }
 
 form.create-orphanage-form {
@@ -178,4 +178,50 @@ form.create-orphanage-form button.confirm-button svg {
 
 form.create-orphanage-form button.confirm-button:hover {
   background: var(--button-green-hover);
+}
+
+#page-create-orphanage main footer {
+  width: 700px;
+  margin: -8rem auto 8rem auto;
+  height: 16rem;
+  background: var(--input-background);
+  border-radius: 0 0 2rem 2rem;
+  border: 0.1rem solid var(--border);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-create-orphanage main footer button {
+  width: 40%;
+  height: 6.4rem;
+  border: 0;
+  cursor: pointer;
+  background: var(--button-green);
+  border-radius: 2rem;
+  color: var(--text);
+  font-weight: 800;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s;
+}
+
+#page-create-orphanage main footer button:hover {
+  background: var(--button-green-hover);
+}
+
+#page-create-orphanage main footer button.refuse {
+  background: var(--color-pink);
+}
+
+#page-create-orphanage main footer button.refuse:hover {
+  background: var(--color-medium-pink);
+}
+
+#page-create-orphanage main footer button:nth-child(2) {
+  margin-left: 2rem;
 }
